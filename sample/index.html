@@ -31,6 +31,8 @@
 	ClassicEditor.create( document.querySelector( '#editor' ) )
 		.then( editor => {
 			window.editor = editor;
+
+			console.log(Array.from( editor.ui.componentFactory.names() ))
 		} )
 		.catch( err => {
 			console.error( err.stack );
