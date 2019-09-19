@@ -1,7 +1,7 @@
 {
   "name": "@nektorandom/ckeditor5-full-custom",
-  "version": "12.4.0",
-  "description": "CKEditor 5 custom full",
+  "version": "12.5.0",
+  "description": "CKEditor 5 custom full with full screen",
   "keywords": [
     "ckeditor5-build",
     "ckeditor",
