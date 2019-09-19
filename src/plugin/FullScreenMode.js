@@ -28,10 +28,14 @@ export default class FullScreenMode extends Plugin {
 				if ( isOn === false ) {
 					// eslint-disable-next-line max-len
 					editor.ui.view.element.setAttribute( 'style', `position: absolute; z-index: 9995; left: 0px; top: 0px; width: ${ innerWidth }px` );
+					editor.ui.view.element.classList.add( 'n-full-screen-mode' );
 					editor.ui.view.editable.element.style.height = `${ innerHeight }px`;
+					editor.ui.view.editable.element.classList.add( 'n-full-screen-mode-editable' );
 				} else {
 					editor.ui.view.element.setAttribute( 'style', '' );
+					editor.ui.view.element.classList.remove( 'n-full-screen-mode' );
 					editor.ui.view.editable.element.setAttribute( 'style', '' );
+					editor.ui.view.editable.element.classList.remove( 'n-full-screen-mode-editable' );
 				}
 
 				isOn = !isOn;
